@@ -1,3 +1,26 @@
+var docTitle = document.title;
+
+var phone = document.getElementById("fas fa-mobile-alt navbar-icon");
+var ordi = document.getElementById("fas fa-laptop navbar-icon");
+var tele = document.getElementById("fas fa-tv navbar-icon");
+
+
+switch (docTiltle) {
+
+  case 'Catalogue des téléphone':
+    phone.style.color="#eb7371";
+
+  case 'Catalogue des ordinateurs':
+    ordi.style.color="#eb7371";
+
+  case 'Catalogue des Télévisions':
+    tele.style.color="#eb7371";
+
+  default:
+    var z = 4;
+}
+
+
 window.addEventListener('scroll', function(){
 
   var tete = document.getElementById("tete");
