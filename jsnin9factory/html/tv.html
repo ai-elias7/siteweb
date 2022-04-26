@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Catalogue des Télévisions</title>
+    <link rel="stylesheet" href="../css/catalogue.css">
+    <script type="text/javascript" src="../js/ca.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+    <script type="text/javascript" src="../js/diminuer.augmenter.js"></script>
+    <link rel="stylesheet" href="https://use.fonteaweome.com/releases/v5.13.0/css/all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+    <header>
+
+      <div class="tete" id="tete">
+        
+      <h1 class="titre2">jsnin9Factory</h1>
+
+      <ul class="Navbar-menu" id="Navbar-menu"  >
+          
+        <li class="Navbar-item">
+          <a href="../index.html" class="Navbar-link">
+            <i class="fas fa-home Navbar-icon"></i>
+            <span class="Navbar-title">Home</span></a></li>
+
+        <li class="Navbar-item">
+          <a href="phone.html" class="Navbar-link">
+            <i class="fas fa-mobile-alt Navbar-icon"></i>
+            <span class="Navbar-title">Smartphone</span></a></li>
+
+        <li class="Navbar-item">
+          <a href="ordi.html" class="Navbar-link ">
+            <i class="fas fa-laptop Navbar-icon"></i>
+            <span class="Navbar-title">Ordinateur</span></a></li>
+
+        <li class="Navbar-item">
+          <a href="#" class="Navbar-link">
+            <i class="fas fa-tv navbar-icon" style="color: #eb7371;"></i>
+            <span class="Navbar-title">Télévision</span></a></li>
+
+        <li class="Navbar-item">
+          <a href="contact.html" class="Navbar-link">
+            <i class="fas fa-mail-bulk Navbar-icon"></i>
+            <span class="Navbar-title">Contact</span></a></li>
+
+        <li class="Navbar-item">
+          <a href="connexion.html" class="Navbar-link">
+            <i class="fas fa-mail-bulk Navbar-icon"></i>
+            <span class="Navbar-title">Accéder à mon compte</span></a></li>
+
+      </ul>
+
+    
+    </div>
+
+
+
+  <nav class="navbar" id="nav">
+
+    <ul class="navbar-menu" id="navbar-menu">
+      
+      <li class="navbar-item">
+        <a href="../index.html" class="navbar-link">
+          <i class="fas fa-home navbar-icon" ></i>
+          <span class="navbar-title">Home</span></a></li>
+
+      <li class="navbar-item">
+        <a href="phone.html" class="navbar-link">
+          <i class="fas fa-mobile-alt navbar-icon"></i>
+          <span class="navbar-title">Smartphone</span></a></li>
+
+      <li class="navbar-item">
+        <a href="ordi.html" class="navbar-link ">
+          <i class="fas fa-laptop navbar-icon"></i>
+          <span class="navbar-title">Ordinateur</span></a></li>
+
+      <li class="navbar-item">
+        <a href="tv.html" class="navbar-link">
+          <i class="fas fa-tv navbar-icon" style="color: #eb7371;"></i>
+          <span class="navbar-title">Télévision</span></a></li>
+
+      <li class="navbar-item">
+        <a href="contact.html" class="navbar-link">
+          <i class="fas fa-mail-bulk navbar-icon"></i>
+          <span class="navbar-title">Contact</span></a></li>
+
+    </ul>
+  </nav>
+
+
+
+  </header>
+
+
+  <div class="titre"><h1><span><span>Téléviseurs</span></span></h1></div>
+
+
+
+
+
+<table class="catalogue">
+  <thead>
+    <tr>
+      <th>Illustration</th>
+      <th>Désignation</th>
+      <th>Prix</th>
+      <th>Référence</th>
+      <th class="stock">Stock</th>
+      <th>Commande</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="../img/samsung.png" width="75%" alt=""></td>
+      <td>Samsung Smart TV 2020</td>
+      <td>1349,00€</td>
+      <td>Te1</td>
+      <td class="stock" id="stock2">5</td>
+      <td>
+        <button class="button3" onclick="diminuer(0)">-</button><input disabled class="nb" type="text" value="0"><button class="button3" onclick="augmenter(0)">+</button>
+        <button class="button2">AJOUTER AU PANIER</button></td>
+    </tr>
+    <tr>
+      <td><img src="../img/sony.png" width="75%" alt=""></td>
+      <td>TV LED Sony Bravia</td>
+      <td>300,00€</td>
+      <td>Te2</td>
+      <td class="stock" id="stock2">5</td>
+      <td>
+        <button class="button3" onclick="diminuer(1)">-</button><input disabled class="nb" type="text" value="0"><button class="button3" onclick="augmenter(1)">+</button>
+        <button class="button2">AJOUTER AU PANIER</button></td>
+    </tr>
+    <tr>
+      <td><img src="../img/TCL.png" width="75%" alt=""></td>
+      <td>TCL 43 EP 644</td>
+      <td>400,00€</td>
+      <td>Te3</td>
+      <td class="stock" id="stock2">5</td>
+      <td>
+        <button class="button3" onclick="diminuer(2)">-</button><input disabled class="nb" type="text" value="0"><button class="button3" onclick="augmenter(2)">+</button>
+        <button class="button2">AJOUTER AU PANIER</button></td>
+    </tr>
+    <tr>
+      <td><img src="../img/phillips.png" width="75%" alt=""></th>
+      <td>Philips LED Smart TV</th>
+      <td>500,00€</th>
+      <td>Te4</th>
+      <td class="stock" id="stock2">5</td>
+      <td>
+          <button class="button3" onclick="diminuer(3)">-</button><input disabled class="nb" type="text" value="0"><button class="button3" onclick="augmenter(3)">+</button>
+          <button class="button2">AJOUTER AU PANIER</button></td>
+    </tr>
+    <tr>
+      <td><img src="../img/hyundai.png" width ="75%" alt=""></td>
+      <td>Hyundai Smart TV LED 24</td>
+      <td>700,00€</td>
+      <td>Te5</td>
+      <td class="stock" id="stock2">5</td>
+      <td>
+        <button class="button3" onclick="diminuer(4)">-</button><input disabled class="nb" type="text" value="0"><button class="button3" onclick="augmenter(4)">+</button>
+        <button class="button2">AJOUTER AU PANIER</button></td>
+    </tr>
+    <button class="button1" style="float:right" onclick="afficher()">Afficher le stock</button>
+  </tbody>
+</table>
+
+<footer> <!--bas de pages-->
+  <strong> Nos contacts</strong>
+  <p> 06.95.81.95.95  06.45.41.28.48</p>
+  <p>aitboualie@cy-tech.fr okonnguess@cy-tech.fr</p>
+  <p>Avenue du Parc, 95000 Cergy.</p>
+  <p><strong> COPYRIGHT JSNINEFACTORY </strong></p>
+</footer>
+  </body>
+</html>

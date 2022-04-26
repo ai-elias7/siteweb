@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Carter+One&family=Lato:wght@700&family=Roboto+Mono:ital,wght@0,100;0,700;1,100&family=Rubik+Wet+Paint&display=swap');
+
+
+
+body, html{
+  text-align:center; /*centrer le texte*/
+  font-family: 'Roboto', sans-serif; /*changer police*/
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+
+body header{
+  background:url(../img/backk.jpg);
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+}
+
+
+
+.tete  {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  z-index: 1000;
+}
+
+
+.titre2{
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Carter One', cursive;
+}
+
+
+
+
+.tete.teteScroll{
+  background: #000000;
+  color : white;
+}
+
+
+
+
+.container {
+
+  justify-content: center; /*centrer le texte*/
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /*changer police*/
+
+ 
+  padding-top: 20%;
+  padding-right: 30%;
+  padding-left: 30%;
+  padding-bottom: 10%;
+
+
+}
+
+
+
+.box{
+    background-color: #fff; /* couleur blanche background*/
+    padding: 20px 70px; /* marge interieur*/
+    border-radius: 10px; /* arrondir les angles*/
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+                                                                                                                 
+.Navbar-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.Navbar-item{
+  width: 100%;
+  border-bottom: solid 0px var(--navbar-separator-color);
+  transition: background-color var(--navbar-transition-speed);
+  text-align: center;
+  justify-content: center; 
+}
+
+
+
+.Navbar-item:hover .Navbar-icon{
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+
+.Navbar-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+.Navbar-icon{
+  text-align: center;
+  font-size: 1.7rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color: black /*var(--navbar-icon-color)*/;
+  transition: var(--navbar-transition-speed) ;
+}
+
+
+
+.Navbar-title{
+  color: black; ; /*var(--navbar-icon-color)*/;
+  font-weight: 1000;
+  font-size: 1rem;
+  font-family:  'Roboto', sans-serif;
+  transition: 200ms;
+}
+
+
+
+.Navbar-title:hover {
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+
+.Navbar-title.titleScroll{
+  color : white;
+}
+
+
+.Navbar-title.titleScroll:hover{
+  color : #eb7371;
+}
+
+
+
+.form-control1 input{
+
+  margin-right: 10%;
+  margin-left: 10%
+
+}
+
+
+.genre{
+  padding-left: 20%;
+}
+
+.form-control, .form-control1  {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label, .form-control1 div {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input, .form-control select, .form-control textarea, .form-control1 div  {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+
+
+.form-control input:focus, .form-control1 div:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input, .form-control.success select, .form-control.success textarea, .form-control1.success div   {
+	border-color: #2ecc71;
+}
+
+.form-control.error input, .form-control1.error div {
+	border-color: #e74c3c;
+}
+
+.form-control i, .form-control1 i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle, .form-control1.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle, .form-control1.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small, .form-control1 small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small, .form-control1.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color:  #eb7371;
+	border: 2px solid  #eb7371;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+  font-family: 'Roboto', sans-serif;	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+:root{
+  --navbar-background-color: #f2f2f2;
+  --navbar-item-hovered-color: white;
+  --navbar-separator-color: #ececec;
+  --navbar-icon-color: #646c79;
+  --navbar-text-color: black;
+  --navbar-transition-speed: .30s;
+  --primary-color: #7C4DFF;
+  --navbar-logo-background-color: #e2dfe4;
+}
+
+
+
+.navbar{
+  width: 5rem;
+  position: fixed;
+  top: 20rem;
+  left: 0rem;
+  bottom: 10rem;
+  background: var(--navbar-background-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 14px;
+  transition: width var(--navbar-transition-speed) ease;
+}   
+
+.navbar.navScroll{
+  overflow: hidden;
+  width: 0;
+}
+
+
+.navbar-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-item{
+  width: 100%;
+  border-bottom: solid 1px var(--navbar-separator-color);
+  transition: background-color var(--navbar-transition-speed);
+}
+
+.navbar-item:hover{
+  background-color: rgb(220, 221, 220);
+}
+
+.navbar-item:hover .navbar-icon{
+  font-size: 50px;
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+.navbar-item:hover .navbar-title{
+  font-size: 25px;
+}
+
+.navbar-item:last-child{
+  margin-top: auto;
+}
+
+.navbar-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+.navbar-icon{
+  text-align: center;
+  font-size: 1.7rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color: black /*var(--navbar-icon-color)*/;
+  transition: var(--navbar-transition-speed) ;
+}
+
+.navbar-title{
+  color: black /*var(--navbar-icon-color)*/;
+  font-weight: 350;
+  font-family:  'Roboto', sans-serif;
+  transition: background-color var(--navbar-transition-speed);
+}
+
+.navbar:not(:hover) .navbar-title{
+  display: none;
+}
+
+.navbar:hover{
+  width: 15rem;
+}
+
+
+
+
+footer{
+  margin-top : 10px;/*espace pied de page avec le reste*/
+  background-color: black; /*fond noir*/
+  color:white; /*couleur blanche de l'ecriture*/
+  padding: 0;/*espacé l'étriture des bords haut/bas*/
+  text-align: center;
+  margin-bottom: 0;
+
+}
