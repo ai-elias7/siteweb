@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Carter+One&family=Lato:wght@700&family=Roboto+Mono:ital,wght@0,100;0,700;1,100&family=Rubik+Wet+Paint&display=swap');
+
+
+body, html{
+  text-align:center; /*centrer le texte*/
+  font-family: 'Roboto', sans-serif; /*changer police*/
+  background-color: #fff;
+  margin: 0;
+}
+
+
+body header{
+  background:url(../img/backk.jpg);
+  align-items: center;
+  background-size: cover;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+                                                                                                                  
+.Navbar-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.Navbar-item{
+  width: 100%;
+  border-bottom: solid 0px var(--navbar-separator-color);
+  transition: background-color var(--navbar-transition-speed);
+  text-align: center;
+  justify-content: center; 
+}
+
+
+.Navbar-item:hover .Navbar-icon{
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+
+.Navbar-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+.Navbar-icon{
+  text-align: center;
+  font-size: 1.7rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color: black /*var(--navbar-icon-color)*/;
+  transition: var(--navbar-transition-speed) ;
+}
+
+
+
+.Navbar-title{
+  color: black; ; /*var(--navbar-icon-color)*/;
+  font-weight: 1000;
+  font-size: 1rem;
+  font-family:  'Roboto', sans-serif;
+  transition: 200ms;
+}
+
+
+
+.Navbar-title:hover {
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+
+.Navbar-title.titleScroll{
+  color : white;
+}
+
+
+.Navbar-title.titleScroll:hover{
+  color : #eb7371;
+}
+
+
+ .box{
+  display: flex;
+  justify-content: center; /*centrer le texte*/
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /*changer police*/
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+
+
+:root{
+  --navbar-background-color: #f2f2f2;
+  --navbar-item-hovered-color: white;
+  --navbar-separator-color: #ececec;
+  --navbar-icon-color: #646c79;
+  --navbar-text-color: black;
+  --navbar-transition-speed: .30s;
+  --primary-color: #7C4DFF;
+  --navbar-logo-background-color: #e2dfe4;
+}
+
+
+.navbar{
+  width: 5rem;
+  position: fixed;
+  top: 20rem;
+  left: 0rem;
+  bottom: 10rem;
+  background: var(--navbar-background-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 14px;
+  transition: width var(--navbar-transition-speed) ease;
+}   
+
+.navbar-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-item{
+  width: 100%;
+  border-bottom: solid 1px var(--navbar-separator-color);
+  transition: background-color var(--navbar-transition-speed);
+}
+
+.navbar-item:hover{
+  background-color: rgb(220, 221, 220);
+}
+
+.navbar-item:hover .navbar-icon{
+  font-size: 50px;
+  color: #eb7371/*var(--primary-color)*/;
+}
+
+.navbar-item:hover .navbar-title{
+  font-size: 25px;
+}
+
+.navbar-item:last-child{
+  margin-top: auto;
+}
+
+.navbar-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+.navbar-icon{
+  text-align: center;
+  font-size: 1.7rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color: black /*var(--navbar-icon-color)*/;
+  transition: var(--navbar-transition-speed) ;
+}
+
+.navbar-title{
+  color: black /*var(--navbar-icon-color)*/;
+  font-weight: 350;
+  font-family:  'Roboto', sans-serif;
+  transition: background-color var(--navbar-transition-speed);
+}
+
+.navbar:not(:hover) .navbar-title{
+  display: none;
+}
+
+.navbar:hover{
+  width: 15rem;
+}
+
+form{
+  
+  background-color: #fff; /* couleur blanche background*/
+  padding: 20px 70px; /* marge interieur*/
+  border-radius: 10px; /* arrondir les angles*/
+  min-width: 300px; /* taille min du formulaire*/
+}
+
+form h2{
+  color:#eb7371; /*changer couleur titre principal*/
+  text-align: center; /*centrer le titre*/
+  font-size: 35px;
+}
+
+form .inscription{
+
+  display: flex;
+  gap: 20px;
+}
+
+form .inscription .left{
+  display: flex;
+  flex-direction: column; /*mettre les imput en colonne*/
+  margin-bottom:  5px;
+}
+
+form .inscription .right{
+  display: flex;
+  flex-direction: column; /*mettre les imput en colonne*/
+  margin-bottom:  5px;
+}
+
+input{
+  background-color: #f5f5f5; /*couleur grise dans les inputs*/
+  margin-bottom: 0px; /*séparer les inputs*/
+  padding: 5px; /* aggrandi les inputs*/
+  font-size: 15px; /*aggrandi taille écriture*/
+  border-radius: 5px; /*arrondi les bords des inputs*/
+  outline: none; /*enlève la ligne rouge quand on clique sur les inputs*/
+}
+
+form button{
+  padding: 5px 5px; /* augmente la taille du bouton*/
+  border: none; /* enleve la bordure*/
+  border-radius: 5px;  /*arrondi le bouton*/
+  font-size: 15px; /* aggrandi taille de l'écriture*/
+  color: #fff; /* ecriture en blanche*/
+  background-color : #eb7371; /* fond orangé*/
+  outline: none; /* enleve la ligne rouge qd on appuie*/
+  cursor: pointer; /*change le curseur*/
+  margin-top: 5%;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+footer{
+  margin-top : 10px;/*espace pied de page avec le reste*/
+  background-color: black; /*fond noir*/
+  color:white; /*couleur blanche de l'ecriture*/
+  padding: 0;/*espacé l'étriture des bords haut/bas*/
+  text-align: center;
+  margin-bottom: 0;
+
+}
